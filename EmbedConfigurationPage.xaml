@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:DiscordWebhookControlUtility"
         xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
         mc:Ignorable="d"
-        Title="Discord Webhook Control - Embed" Height="450" Width="800" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Closing="InsteadClosingHide">
+        Title="Discord Webhook Control - Embed" Height="450" Width="800" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid>
         <Label Content="Embed - pro side of the webhook" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="16" Grid.ColumnSpan="2"/>
         <TextBox Height="23" Margin="10,68,522,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Grid.ColumnSpan="2"/>

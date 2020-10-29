@@ -23,7 +23,7 @@ namespace DiscordWebhookControlUtility
     public partial class MainWindow : Window
     {
         private static readonly HttpClient client = new HttpClient();
-        private static readonly EmbedConfigurationPage embedConfigurationPage = new EmbedConfigurationPage();
+        private static EmbedConfigurationPage embedConfigurationPage;
         public MainWindow()
         {
             InitializeComponent();
@@ -88,7 +88,7 @@ namespace DiscordWebhookControlUtility
 
         private void ShowEmbedsDialog(object sender, RoutedEventArgs e)
         {
-
+            embedConfigurationPage = new EmbedConfigurationPage();
             embedConfigurationPage.Owner = this;
             embedConfigurationPage.ShowDialog();
         }
