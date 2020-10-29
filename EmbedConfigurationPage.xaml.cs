@@ -23,5 +23,11 @@ namespace DiscordWebhookControlUtility
         {
             InitializeComponent();
         }
+
+        private void InsteadClosingHide(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            e.Cancel = true;
+            this.Hide();
+        }
     }
 }

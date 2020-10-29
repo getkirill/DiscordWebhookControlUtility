@@ -43,8 +43,8 @@
         </StatusBar>
         <Button x:Name="SendButton" Content="Send" Margin="0,0,10,29" HorizontalAlignment="Right" Width="75" Height="20" VerticalAlignment="Bottom" Click="SendWebhook"/>
         <CheckBox x:Name="Webhook_CustomNameOption" Content="Custom Name" HorizontalAlignment="Left" Margin="10,174,0,0" VerticalAlignment="Top"/>
-        <CheckBox Content="Embeds" HorizontalAlignment="Left" Margin="242,174,0,0" VerticalAlignment="Top" IsEnabled="False"/>
-        <Button Content="Configure embeds" HorizontalAlignment="Left" Margin="309,174,0,0" VerticalAlignment="Top" Width="126" Click="ShowEmbedsDialog"/>
+        <CheckBox Content="Embed" HorizontalAlignment="Left" Margin="242,174,0,0" VerticalAlignment="Top" IsEnabled="False"/>
+        <Button Content="Configure embeds" HorizontalAlignment="Left" Margin="304,173,0,0" VerticalAlignment="Top" Width="126" Click="ShowEmbedsDialog"/>
         <TextBox x:Name="Webhook_CustomName" HorizontalAlignment="Left" Margin="111,174,0,0" TextWrapping="Wrap" Text="Test name" VerticalAlignment="Top" Width="120"/>
 
     </Grid>

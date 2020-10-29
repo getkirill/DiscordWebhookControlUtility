@@ -6,17 +6,18 @@
         xmlns:local="clr-namespace:DiscordWebhookControlUtility"
         xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
         mc:Ignorable="d"
-        Title="Embeds" Height="450" Width="800" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+        Title="Discord Webhook Control - Embed" Height="450" Width="800" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Closing="InsteadClosingHide">
     <Grid>
-        <Label Content="Embeds - pro side of the webhooks" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="16"/>
-        <TextBox Height="23" Margin="10,68,522,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
-        <TextBox Height="23" Margin="0,68,257,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" HorizontalAlignment="Right" Width="260"/>
-        <TextBox Height="23" Margin="0,68,10,0" TextWrapping="Wrap" Text="000000" VerticalAlignment="Top" HorizontalAlignment="Right" Width="242"/>
-        <Label Content="Title*" Margin="10,41,522,0" VerticalAlignment="Top"/>
-        <Label Content="Title URL" HorizontalAlignment="Right" Margin="0,41,460,0" VerticalAlignment="Top"/>
-        <Label Content="Color (HEX)*" HorizontalAlignment="Right" Margin="0,41,176,0" VerticalAlignment="Top"/>
-        <Label Content="Required fields marked with *" HorizontalAlignment="Left" Margin="10,0,0,10" Height="26" VerticalAlignment="Bottom" Foreground="Red"/>
+        <Label Content="Embed - pro side of the webhook" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="16" Grid.ColumnSpan="2"/>
+        <TextBox Height="23" Margin="10,68,522,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <TextBox Height="23" Margin="0,68,257,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" HorizontalAlignment="Right" Width="260" Grid.Column="1"/>
+        <TextBox Height="23" Margin="0,68,10,0" TextWrapping="Wrap" Text="000000" VerticalAlignment="Top" HorizontalAlignment="Right" Width="242" Grid.Column="1"/>
+        <Label Content="Title*" Margin="10,41,522,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <Label Content="Title URL" HorizontalAlignment="Right" Margin="0,41,460,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <Label Content="Color (HEX)*" HorizontalAlignment="Right" Margin="0,41,176,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <Label Content="Required fields marked with *" HorizontalAlignment="Left" Margin="10,0,0,10" Height="26" VerticalAlignment="Bottom" Foreground="Red" Grid.ColumnSpan="2"/>
         <Label Content="Content" HorizontalAlignment="Left" Margin="10,91,0,0" VerticalAlignment="Top"/>
-        <TextBox Margin="10,117,10,41" TextWrapping="Wrap" Text=""/>
+        <TextBox Margin="10,117,10,41" TextWrapping="Wrap" Text="" Grid.ColumnSpan="2"/>
+        <Label Content="Autosave enabled, just close the window" HorizontalAlignment="Left" Margin="181,0,0,10" Height="26" VerticalAlignment="Bottom" Foreground="#FFC9C9C9"/>
     </Grid>
 </Window>
