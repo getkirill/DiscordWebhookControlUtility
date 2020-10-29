@@ -23,10 +23,10 @@ namespace DiscordWebhookControlUtility
     public partial class MainWindow : Window
     {
         private static readonly HttpClient client = new HttpClient();
+        private static readonly EmbedConfigurationPage embedConfigurationPage = new EmbedConfigurationPage();
         public MainWindow()
         {
             InitializeComponent();
-            new EmbedConfigurationPage().Show();
         }
 
         private void Hyperlink_ReqNavigation(object sender, RequestNavigateEventArgs e)
@@ -63,7 +63,7 @@ namespace DiscordWebhookControlUtility
             }
         }
 
-        private void PerformPresetSaving(object sender, System.ComponentModel.CancelEventArgs e)
+        private void PerformSaving(object sender, System.ComponentModel.CancelEventArgs e)
         {
             WebhookSettings settings = new WebhookSettings();
             settings.url = WebhookURL.Text;
@@ -84,6 +84,13 @@ namespace DiscordWebhookControlUtility
                 Webhook_CustomNameOption.IsChecked = settings.custom_name_enabled;
                 Webhook_CustomName.Text = settings.custom_name;
             } catch (Exception) { }
+        }
+
+        private void ShowEmbedsDialog(object sender, RoutedEventArgs e)
+        {
+
+            embedConfigurationPage.Owner = this;
+            embedConfigurationPage.ShowDialog();
         }
     }
 }
