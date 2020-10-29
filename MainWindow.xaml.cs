@@ -56,7 +56,7 @@ namespace DiscordWebhookControlUtility
             try
             {
                 var response = await client.PostAsync(WebhookURL.Text, content);
-                WebhookStatus.Text = "Sent! Response: " + (response.IsSuccessStatusCode ? "successful" : "error");
+                WebhookStatus.Text = "Sent " + (response.IsSuccessStatusCode ? "successful!" : "with error!");
             } catch (Exception)
             {
                 MessageBox.Show("An unexpected error occured!\n" + e.ToString(), "Oops!", MessageBoxButton.OK, MessageBoxImage.Error, MessageBoxResult.OK);
