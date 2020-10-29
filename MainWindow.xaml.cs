@@ -26,6 +26,7 @@ namespace DiscordWebhookControlUtility
         public MainWindow()
         {
             InitializeComponent();
+            new EmbedConfigurationPage().Show();
         }
 
         private void Hyperlink_ReqNavigation(object sender, RequestNavigateEventArgs e)
